@@ -133,7 +133,7 @@ FOREIGN KEY (user_id) REFERENCES users(id)
 
 Clone the repository
 
-git clone https://github.com/your-username/library-management-system.git
+git clone https://github.com/RohitMane2005/library-management-system.git
 
 
 Open in IntelliJ IDEA
