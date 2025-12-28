@@ -1,60 +1,48 @@
-📚 Library Management System (Java + JDBC + MySQL)
+# 📚 Library Management System (Java + JDBC + MySQL)
 
-A console-based Library Management System built using Core Java, JDBC, and MySQL, following a clean layered architecture (DAO–Service–Model).
-The project supports Admin & User roles, persistent database storage, and proper separation of concerns.
+A console-based **Library Management System** built using **Core Java, JDBC, and MySQL**, following a clean **layered architecture (DAO – Service – Model)**.
 
-🚀 Features
-👨‍💼 Admin
+The system supports **Admin & User roles**, **persistent database storage**, and proper **separation of concerns**.
 
-Add new books (with quantity)
+---
 
-Delete books
+## 🚀 Features
 
-View all books
+### 👨‍💼 Admin
+- Add new books (with quantity)
+- Delete books
+- View all books
+- Issue books to users
+- Return books
+- View all issued books
+- Role-based access control
 
-Issue books to users
+### 👤 User
+- View available books
+- Issue a book
+- Return a book
 
-Return books
+### ⚙️ System
+- MySQL database integration using JDBC
+- DAO pattern for database operations
+- Service layer for business logic
+- Role-based authentication
+- Fine calculation for late returns
+- Clean and modular package structure
 
-View all issued books
+---
 
-Role-based access control
+## 🛠️ Tech Stack
+- Java 17
+- JDBC
+- MySQL
+- IntelliJ IDEA
+- MySQL Connector/J
 
-👤 User
-
-View available books
-
-Issue a book
-
-Return a book
-
-⚙️ System
-
-MySQL database integration using JDBC
-
-DAO pattern for database operations
-
-Service layer for business logic
-
-Role-based authentication
-
-Fine calculation for late returns
-
-Clean and modular package structure
-
-🛠️ Tech Stack
-
-Java 17
-
-JDBC
-
-MySQL
-
-IntelliJ IDEA
-
-MySQL Connector/J
+---
 
 <h2>🗂️ Project Structure</h2>
+
 <pre>
 LibraryApp/
 │
@@ -87,7 +75,10 @@ LibraryApp/
 └── mysql-connector-j-9.5.0.jar
 </pre>
 
-🧠 Architecture Overview
+---
+
+## 🧠 Architecture Overview
+<pre>
 Main
 ↓
 Service Layer (Business Logic)
@@ -95,8 +86,8 @@ Service Layer (Business Logic)
 DAO Layer (Database Operations)
 ↓
 MySQL Database
-
-
+</pre>
+<pre>
 Model → Plain Java objects (Book, User, IssuedBook)
 
 DAO → All SQL & JDBC logic
@@ -130,12 +121,14 @@ due_date DATE,
 FOREIGN KEY (book_id) REFERENCES books(id),
 FOREIGN KEY (user_id) REFERENCES users(id)
 );
+</pre>
 
 ▶️ How to Run
-
-Clone the repository
+<pre>
+<h3>Clone the repository<h3>
 
 git clone https://github.com/RohitMane2005/library-management-system.git
+</pre>
 
 
 Open in IntelliJ IDEA
