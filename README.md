@@ -95,7 +95,7 @@ DAO → All SQL & JDBC logic
 Service → Validation, business rules, role handling
 
 Util → DB connection & file utilities
-<pre>
+</pre>
 🗄️ Database Schema
 📘 books
 CREATE TABLE books (
@@ -110,8 +110,7 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(100) UNIQUE NOT NULL,
 role ENUM('ADMIN','USER') NOT NULL
 );
-</pre>
-<pre>
+
 📕 issued_books
 CREATE TABLE issued_books (
 id INT AUTO_INCREMENT PRIMARY KEY,
