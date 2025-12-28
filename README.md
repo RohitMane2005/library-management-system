@@ -96,6 +96,7 @@ Service → Validation, business rules, role handling
 
 Util → DB connection & file utilities
 </pre>
+<pre>
 🗄️ Database Schema
 📘 books
 CREATE TABLE books (
