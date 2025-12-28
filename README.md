@@ -54,7 +54,8 @@ IntelliJ IDEA
 
 MySQL Connector/J
 
-🗂️ Project Structure
+<h2>🗂️ Project Structure</h2>
+<pre>
 LibraryApp/
 │
 ├── src/
@@ -84,6 +85,7 @@ LibraryApp/
 ├── .gitignore
 ├── LibraryApp.iml
 └── mysql-connector-j-9.5.0.jar
+</pre>
 
 🧠 Architecture Overview
 Main
